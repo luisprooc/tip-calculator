@@ -18,6 +18,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
+        Coded by <a href="#" rel="noopener">Luis Miguel Rosario Suarez</a>.
+      </div>
     </div>
   );
 }
