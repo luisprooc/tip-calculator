@@ -1,0 +1,39 @@
+.cal-container{
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 45px;
+  padding: 2rem;
+}
+
+.cal-total-box{
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  padding: 4rem 2.5rem 2rem 2.5rem;
+}
+
+.cal-total-row-btn {
+  margin-top: 7rem;
+}
+
+.cal-total-btn{
+  background-color: hsl(172, 67%, 45%);
+  border-radius: 5px;
+  min-width: 20rem;
+  height: 3rem;
+  color: hsl(186, 14%, 43%);
+  opacity: 0.2;
+  border: 0;
+}
+
+.cal-total-digits {
+  color: hsl(172, 67%, 45%);
+  font-size: 3rem;
+  text-align: end;
+  margin-top: -1rem;
+}
+
+.cal-total-digits-icon {
+  padding: 4rem;
+  height: 10rem;
+  width: 100px;
+}
