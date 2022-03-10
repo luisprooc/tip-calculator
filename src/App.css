@@ -1,20 +1,20 @@
 .App {
   position: relative;
-  top: 5rem;
-  max-width: 65rem;
+  top: 3rem;
+  max-width: 60rem;
 }
 
 .title {
   letter-spacing: 1rem;
   text-align: center;
   color: hsl(186, 14%, 43%);
+  margin-bottom: 3rem;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
-  position: relative;
-  bottom: auto;
+  margin-top: 5rem;
 }
 
 .attribution a {
