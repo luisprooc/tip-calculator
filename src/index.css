@@ -1,7 +1,6 @@
-
-
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Space Mono', monospace;
   background-color: hsl(185, 41%, 84%);
+  font-weight: 700;
 }

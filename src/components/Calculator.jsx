@@ -16,7 +16,7 @@ const Calculator = () => {
 
   return (
     <Row className="cal-container">
-      <Col lg="7">
+      <Col lg="6">
         <div className="cal-container-inputs">
           <label className="cal-label-inputs" for="bill" id="cal-label-bill">
             Bill
@@ -26,26 +26,35 @@ const Calculator = () => {
         </div>
         <div className="cal-container-inputs">
           <label className="cal-label-inputs">Select Tip %</label> <br />
-          <Row className="g-0">
-            <Col>
+          <Row>
+            <Col lg="4">
               <button className="cal-tip-btn">5%</button>
             </Col>
-            <Col>
+            <Col lg="4">
               <button className="cal-tip-btn">10%</button>
             </Col>
-            <Col>
+            <Col lg="4">
               <button className="cal-tip-btn">15%</button>
+            </Col>
+            <Col lg="4" className="mt-3">
+              <button className="cal-tip-btn">25%</button>
+            </Col>
+            <Col lg="4" className="mt-3">
+              <button className="cal-tip-btn">50%</button>
+            </Col>
+            <Col lg="4" className="mt-3">
+            <input id="cal-tip-input" placeholder={"Custom"} />
             </Col>
             
           </Row>
         </div>
         <div className="cal-container-inputs">
-          <label className="cal-label-inputs">Number of People</label> <br />
+          <label className="cal-label-inputs" id="cal-label-people" for="people">Number of People</label> <br />
           <input className="cal-inputs" placeholder={totalPeople} />
         </div>
       </Col>
-      <Col className="cal-total-box" lg="5">
-        <Row className="mb-4">
+      <Col className="cal-total-box" lg="6">
+        <Row className="mb-4 justify-content-between">
           <Col>
             <p>
               Tip Amount <br />{" "}
@@ -56,14 +65,14 @@ const Calculator = () => {
             <div className="test">
               <p className="cal-total-digits">
                 <span>
-                  <IconDollar width={35} height={35} />{" "}
-                </span>{" "}
+                  <IconDollar width={35} height={35} />
+                </span>
                 {tipAmount}
               </p>
             </div>
           </Col>
         </Row>
-        <Row className="mt-4">
+        <Row className="mt-4 justify-content-between">
           <Col>
             <p>
               Total <br /> <span className="cal-span-person">/ person</span>
@@ -72,8 +81,8 @@ const Calculator = () => {
           <Col>
             <p className="cal-total-digits">
               <span>
-                <IconDollar width={35} height={35} />{" "}
-              </span>{" "}
+                <IconDollar width={35} height={35} />
+              </span>
               {total}
             </p>
           </Col>

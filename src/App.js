@@ -6,7 +6,7 @@ const App = () => {
   return (
     <Container className="App" fluid="sm">
       <div className="App">
-        <h4 className="title">SPLI <br/> TTER</h4>
+        <h4 className="title">SPLI<br/>TTER</h4>
         <Calculator />
         <div className="attribution">
           Challenge by{" "}
