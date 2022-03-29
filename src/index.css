@@ -4,3 +4,11 @@ body {
   background-color: hsl(185, 41%, 84%);
   font-weight: 700;
 }
+
+input {
+  cursor: pointer;
+}
+
+input:focus {
+  outline-color: hsl(172, 67%, 45%);
+}

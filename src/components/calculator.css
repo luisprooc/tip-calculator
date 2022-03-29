@@ -59,6 +59,17 @@
   padding-bottom: 0.5rem;
   width: 7.5rem;
   font-size: 20px;
+  font-weight: bold;
+}
+
+.cal-tip-btn:hover {
+  background-color: hsl(172, 67%, 45%,0.5);
+  color:hsl(183, 100%, 15%);
+}
+
+.cal-tip-btn-selected {
+  background-color: hsl(172, 67%, 45%,0.5);
+  color:hsl(183, 100%, 15%);
 }
 
 #cal-tip-input {
@@ -71,7 +82,6 @@
   text-align: center;
   color: hsl(183, 100%, 15%);
   font-weight: bold;
-  cursor: pointer;
   border-radius: 5px;
 }
 
@@ -94,14 +104,25 @@
   margin-top: 7rem;
 }
 
-.cal-total-btn{
+.cal-reset-btn{
   background-color: hsl(172, 67%, 45%);
   border-radius: 5px;
   min-width: 18rem;
   height: 3rem;
-  color: hsl(186, 14%, 43%);
-  opacity: 0.2;
+  color: hsl(183, 100%, 15%);
   border: 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.cal-reset-btn:disabled{
+  opacity: 0.2;
+  color: hsl(186, 14%, 43%);
+}
+
+.cal-reset-btn:hover{
+  background-color: hsl(185, 41%, 84%);
+  opacity: 0.7;
 }
 
 .cal-total-digits {
