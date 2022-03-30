@@ -46,7 +46,7 @@ const Calculator = () => {
 
   return (
     <Row className="cal-container">
-      <Col lg="6">
+      <Col xs="12" lg="6">
         <div className="cal-container-inputs">
           <label
             className="cal-label-inputs"
@@ -71,7 +71,7 @@ const Calculator = () => {
           <br />
           <Row>
             {btnValues.map((value) => (
-              <Col lg="4" key={value}>
+              <Col xs="6" sm="4" key={value}>
                 <button
                   className={
                     parseInt(tip) === value
@@ -85,7 +85,7 @@ const Calculator = () => {
                 </button>
               </Col>
             ))}
-            <Col lg="4">
+            <Col xs="6" sm="4">
               <input
                 id="cal-tip-input"
                 placeholder="Custom"
@@ -113,16 +113,16 @@ const Calculator = () => {
           />
         </div>
       </Col>
-      <Col className="cal-total-box" lg="6">
+      <Col className="cal-total-box" xs="12" lg="6">
         <Row className="mb-4 justify-content-between">
-          <Col>
-            <p>
+          <Col xs="12" sm="6">
+            <p className="cal-person">
               Tip Amount <br />{" "}
               <span className="cal-span-person">/ person</span>
             </p>
           </Col>
-          <Col>
-            <div className="test">
+          <Col xs="12" sm="6" className="mx-auto">
+            <div className="mx-auto">
               <p className="cal-total-digits">
                 <span>
                   <IconDollar width={35} height={35} />
@@ -133,12 +133,12 @@ const Calculator = () => {
           </Col>
         </Row>
         <Row className="mt-4 justify-content-between">
-          <Col>
-            <p>
-              Total <br /> <span className="cal-span-person">/ person</span>
+          <Col xs="12" sm="6">
+            <p className="cal-person">
+              Total <br /><span className="cal-span-person">/ person</span>
             </p>
           </Col>
-          <Col>
+          <Col xs="12" sm="6">
             <p className="cal-total-digits">
               <span>
                 <IconDollar width={35} height={35} />
